@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - tripZo Rider</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-car"></i>
+                <span>tripZo Rider</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="book-ride.html" class="nav-link">Book Ride</a>
+                <a href="my-rides.html" class="nav-link">My Rides</a>
+                <a href="profile.html" class="nav-link active">Profile</a>
+                <div class="user-info" id="userInfo" style="display: none;">
+                    <span id="userName"></span>
+                    <a href="#" id="logoutBtn" class="btn-logout">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h2 id="profileName">John Doe</h2>
+                    <p id="profileEmail">john@example.com</p>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat">
+                        <h3 id="totalRides">12</h3>
+                        <p>Total Rides</p>
+                    </div>
+                    <div class="stat">
+                        <h3 id="totalDistance">156</h3>
+                        <p>Km Travelled</p>
+                    </div>
+                    <div class="stat">
+                        <h3 id="avgRating">4.8</h3>
+                        <p>Avg Rating</p>
+                    </div>
+                </div>
+                <button class="btn-primary" id="editProfileBtn">Edit Profile</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
